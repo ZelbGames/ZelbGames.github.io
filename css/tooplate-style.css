@@ -115,6 +115,21 @@ p:last-child { margin-bottom: 0; }
     z-index: 1000;
 }
 
+.contacts-panel {
+    gap: 10px;              /* Space between buttons */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contacts-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 48px; /* Adjust icon size */
+    color: #ffffff; /* Icon color */
+}
+
 .tm-content {
     display: -webkit-box;
     display: -ms-flexbox;
