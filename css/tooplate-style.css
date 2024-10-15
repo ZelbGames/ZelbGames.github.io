@@ -36,7 +36,11 @@ a {	color: #FFF;  }
 
 a:hover { color: #FF0; }
 
-h1,h2,h3 { font-weight: 300; }
+h1,h2 { font-weight: 300; }
+
+h3 { font-weight: 200;}
+
+h4{font-weight: 10;}
 
 p {
     font-size: 1rem;
@@ -128,6 +132,32 @@ p:last-child { margin-bottom: 0; }
     cursor: pointer;
     font-size: 48px; /* Adjust icon size */
     color: #ffffff; /* Icon color */
+}
+
+/* My Default place to add more code if unreleated to anything else*/
+
+.icon-break {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* to get rid of the padding*/
+.tm-icon-break-circled {
+    font-size: 3rem;
+    border-radius: 100%;
+    border: 2px solid white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+            justify-content: center;
+    width: 100px;
+    height: 100px;
 }
 
 .tm-content {
