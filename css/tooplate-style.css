@@ -415,7 +415,7 @@ footer a { color: white; }
     
     #tmSideBar {
         width: 300px;
-        position: absolute;
+        position: fixed;
         min-height: 100vh;
         height: auto;
         left: -300px;
