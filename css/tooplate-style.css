@@ -122,8 +122,11 @@ p:last-child { margin-bottom: 0; }
     z-index: 1000;
 }
 
+/* My Default place to add more code if unreleated to anything else*/
+
 .contacts-panel {
-    gap: 0px;              /* Space between buttons */
+    gap: 0px 0px;              /* Space between buttons */
+    padding: 0px 0px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -137,7 +140,6 @@ p:last-child { margin-bottom: 0; }
     color: #ffffff; /* Icon color */
 }
 
-/* My Default place to add more code if unreleated to anything else*/
 
 .icon-break {
     display: flex;
