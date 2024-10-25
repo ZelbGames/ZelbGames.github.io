@@ -123,7 +123,7 @@ p:last-child { margin-bottom: 0; }
 }
 
 .contacts-panel {
-    gap: 0.5%;              /* Space between buttons */
+    gap: 0px;              /* Space between buttons */
     display: flex;
     align-items: center;
     justify-content: center;
