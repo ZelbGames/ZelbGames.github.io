@@ -65,13 +65,13 @@ http://www.tooplate.com/view/2102-constructive
 								</a>
 							</li>
 							<li>
-								<a href="#contact" class="scrolly" data-bg-img="HLA_Temp_Background/HLA_Uninteresting_Profile.jpg" data-page="#tm-section-4">
+								<a href="#contact"  id="tmNavLink4" class="scrolly" data-bg-img="HLA_Temp_Background/HLA_Uninteresting_Profile.jpg" data-page="#tm-section-4">
 									<i class="fas fa-id-badge tm-nav-fa-icon"></i>
 									<span>Profile</span>
 								</a>
 							</li>			
 							<li>
-								<a href="#company" class="scrolly" data-bg-img="HLA_Temp_Background/HLA_Painting_Career.jpg" data-page="#tm-section-3">
+								<a href="#company"  id="tmNavLink3" class="scrolly" data-bg-img="HLA_Temp_Background/HLA_Painting_Career.jpg" data-page="#tm-section-3">
 									<i class="fas fa-road tm-nav-fa-icon"></i>
 									<span>
 										<div>Experience &</div>
@@ -118,12 +118,12 @@ http://www.tooplate.com/view/2102-constructive
 							<header class="mb-4"><h2 class="tm-text-shadow">Projects</h2></header>		            
 							<div class="tm-img-container">
 								<div class="tm-img-slider">
-									<a href="img/games_as_movies_posters/game_poster_01.jpeg" class="tm-slider-img"><img src="img/games_as_movies_posters/game_poster_01.jpeg" alt="Image" class="img-fluid"></a>
-									<a href="img/games_as_movies_posters/game_poster_02.jpeg" class="tm-slider-img"><img src="img/games_as_movies_posters/game_poster_02.jpeg" alt="Image" class="img-fluid"></a>
-									<a href="img/games_as_movies_posters/game_poster_03.jpg" class="tm-slider-img"><img src="img/games_as_movies_posters/game_poster_03.jpg" alt="Image" class="img-fluid"></a>
-									<a href="img/games_as_movies_posters/game_poster_04.jpeg" class="tm-slider-img"><img src="img/games_as_movies_posters/game_poster_04.jpeg" alt="Image" class="img-fluid"></a>
-									<a href="img/games_as_movies_posters/game_poster_05.jpeg" class="tm-slider-img"><img src="img/games_as_movies_posters/game_poster_05.jpeg" alt="Image" class="img-fluid"></a>
-									<a href="img/games_as_movies_posters/game_poster_06.jpeg" class="tm-slider-img"><img src="img/games_as_movies_posters/game_poster_06.jpeg" alt="Image" class="img-fluid"></a>
+									<a href="projecttemplate.html" class="button" onclick="event.stopPropagation()"><img src="img\CatMapImages\catmap45iterationsAseScaled.png" alt="Image" class="img-fluid"></a>
+									<a href="img\CatMapImages\catmap45iterationsAseScaled.png" class="tm-slider-img"><img src="img\CatMapImages\catmap45iterationsAseScaled.png" alt="Image" class="img-fluid"></a>
+									<a href="img\CatMapImages\catmap45iterationsAseScaled.png" class="tm-slider-img"><img src="img\CatMapImages\catmap45iterationsAseScaled.png" alt="Image" class="img-fluid"></a>
+									<a href="img\CatMapImages\catmap45iterationsAseScaled.png" class="tm-slider-img"><img src="img\CatMapImages\catmap45iterationsAseScaled.png" alt="Image" class="img-fluid"></a>
+									<a href="img\CatMapImages\catmap45iterationsAseScaled.png" class="tm-slider-img"><img src="img\CatMapImages\catmap45iterationsAseScaled.png" alt="Image" class="img-fluid"></a>
+									<a href="img\CatMapImages\catmap45iterationsAseScaled.png" class="tm-slider-img"><img src="img\CatMapImages\catmap45iterationsAseScaled.png" alt="Image" class="img-fluid"></a>
 								</div>
 							</div>		            		          
 						</div>       		          	
@@ -301,6 +301,17 @@ http://www.tooplate.com/view/2102-constructive
 		var sidebarVisible = false;
 		var currentPageID = "#tm-section-1";
 
+
+		function getQueryParam() {
+            const queryString = window.location.search;
+			console.log("Retrieved parameter search:", queryString);
+			const urlParams = new URLSearchParams(queryString);
+			const value = urlParams.get("currentPageID");
+            console.log("Retrieved parameter value:", value); // Debug log
+            return value;
+        }
+
+		
 		// Setup Carousel
 		function setupCarousel() {
 
@@ -416,11 +427,27 @@ http://www.tooplate.com/view/2102-constructive
   			}  			
   		}
 
+
+		function intialise(input_page) {
+		    	
+			console.log($(".tm-main-nav a").filter('[ID="${input_page}"]'))
+		    var currentNavItem = $(".tm-main-nav a").filter('[ID="' + input_page + '"]');
+		    changePage(currentNavItem);
+		    	
+		    setupCarousel();
+		    setupFooter();
+
+		    	// Hide the nav on mobile
+		    $("#tmSideBar").removeClass("show");
+		}
+
   		// Everything is loaded including images.
       	$(window).on("load", function(){
 
       		// Render the page on modern browser only.
       		if(renderPage) {
+
+
 				// Remove loader
 		      	$('body').addClass('loaded');
 
@@ -455,6 +482,13 @@ http://www.tooplate.com/view/2102-constructive
 			    setupNav();
 			    setupNavToggle();
 			    setupFooter();
+
+				var query = getQueryParam() ;
+				if ( query  != null) {
+					intialise(getQueryParam());
+				}
+
+
 
 			    // Resize Carousel upon window resize
 			    $(window).resize(function() {
