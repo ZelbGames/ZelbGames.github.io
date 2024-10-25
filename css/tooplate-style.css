@@ -138,7 +138,7 @@ p:last-child { margin-bottom: 0; }
     background-color: transparent;
     border: none;
     cursor: pointer;
-    font-size: 48px; /* Adjust icon size */
+    font-size: 3rem; /* Adjust icon size */
     color: #ffffff; /* Icon color */
 }
 
