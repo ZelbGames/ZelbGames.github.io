@@ -125,8 +125,9 @@ p:last-child { margin-bottom: 0; }
 /* My Default place to add more code if unreleated to anything else*/
 
 .contacts-panel {
-    gap: 0px 0px;              /* Space between buttons */
-    padding: 0px 0px;
+    gap: 0px 0px !important;              /* Space between buttons */
+    padding: 0px 0px !important;
+    margin: 0px 0px !important;
     display: flex;
     align-items: center;
     justify-content: center;
