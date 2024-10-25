@@ -136,6 +136,7 @@ p:last-child { margin-bottom: 0; }
 
 .contacts-button {
     background-color: transparent;
+    padding: 0.25rem 0.25rem !important;
     border: none;
     cursor: pointer;
     font-size: 3rem; /* Adjust icon size */
