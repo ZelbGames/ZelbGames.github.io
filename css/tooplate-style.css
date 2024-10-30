@@ -190,6 +190,19 @@ p:last-child { margin-bottom: 0; }
 }
 
 
+
+.about-me-img {
+    float: right;
+    width: 60%; /* Adjust based on the image size you need */
+    height: auto;
+    border-radius: 10px; /* Makes the image circular */
+    shape-outside: circle();
+    -webkit-shape-outside: circle();
+    margin: 10% 0 -10% -5%;
+}
+
+
+
 /*End of my additional code*/
 .tm-content {
     display: -webkit-box;
