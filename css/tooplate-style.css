@@ -170,7 +170,12 @@ p:last-child { margin-bottom: 0; }
 
 .dynamic-navbar {
     position: fixed;
-    top: 12%;
+    top: 20%;
+}
+
+@media (max-height: 600px) {
+    .dynamic-navbar{top: 0;}
+    
 }
 
 .tm-footer-btn-overrides {
@@ -198,7 +203,7 @@ p:last-child { margin-bottom: 0; }
     border-radius: 10px; /* Makes the image circular */
     shape-outside: circle();
     -webkit-shape-outside: circle();
-    margin: 10% 0 -10% -5%;
+    margin: 0% 0 -10% -5%;
 }
 
 
@@ -650,6 +655,8 @@ footer a { color: white; }
 .no-js #loader-wrapper {
     display: none;
 }
+
+
 
 /* custom carosel css */
 
