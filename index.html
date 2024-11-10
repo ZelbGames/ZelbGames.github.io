@@ -108,60 +108,81 @@ http://www.tooplate.com/view/2102-constructive
 							<header class="mb-4"><h2 class="tm-text-shadow">Projects</h2></header>
 							<ul class='slider'>
 								<li class='item' style="background-image: url('img/worlddrive.png')">
-								  <div class='content tm-bg-transparent-black tm-contact-box-pad'>
-									<div style="display: flex; justify-content: center; align-items: center; text-align: center;">
-										<button onclick="window.open('https://github.com/ZelbGames','_blank')" class="contacts-button"><i class="fab fa-github"></i></button>
-									</div>
-									<h2 class='title'>World Driver</h2>
-									<p class='description'> World Driver is a technical demo written in C++ and Gdscript using the Godot engine.
-									</p>
-									<p class='description'> The game simulates all (available) real world roads on a 1:1 Scale using OSM data
-									</p>
-									<p class='description'> This offers the player unparalled access and freedom to explore and experience the world's roads
+									<details class='collapsable' style="background-color: rgba(0,0,0,0.6);">
+										<summary>
+											<h6>World Driver</h6>
+											<p>For the first time players can drive the entire globe. Travel across real roads at real scales with a suite of flexible tools. This offers unparalleled freedom to explore with options to participate in both official and community leaderboards….</p>
+										</summary>
+										<p class="collapsed-text">Be a street racer, record holder, curious explorer or course mapper for your circle; it’s your world to be discovered.</p>
+										<p class="collapsed-text"> By streaming OSM data through the Overpass API we remove limitations on scale to provide a true-to-life, open world driving experience. Written in C++ for maximum performance, employing curl for speedy and secure data streaming. The conversion from elliptical into cartesian coordinates, then transformed to a local frame of reference, delivers accuracy up to 0.5cm. </p>
+										<p class="collapsed-text">The world is split into 2.5km^2 chunks. Roads are generated along embedded waypoints true to mapping data, bridged via Bezier interpolation (informed by academic resources on computer graphics). Origin shifting around a chunk facilitates planetary scale simulation, eliminating floating point errors and minimizing impact on performance.</p>
+										<p class="collapsed-text">A curiosity in speed records, from key historic point-to-point races, through to hypothetical routes discussed amongst friends, inspired the initial concept.</p>
+										<p class="collapsed-text">I set out to create a genuine open world racing game driven by frustrations with existing games of genres. Freedom, Community and Competition make up the core design principles.</p>
+										<p class="collapsed-text">Currently the game is available as a working demo with all core technical components completed. Awaiting final integration.</p>
+									</details> 
 								</li>
 								<li class='item' style="background-image: url('img/WizardsVersusNinjas.png')">
-								  <div class='content tm-bg-transparent-black tm-contact-box-pad'>
-									<div style="display: flex; justify-content: center; align-items: center; text-align: center;">
-										<button onclick="window.open('https://github.com/ZelbGames','_blank')" class="contacts-button"><i class="fab fa-github"></i></button>
-									</div>
-									<h2 class='title'>Wizards Versus Ninjas</h2>
-									<p class='description'> Wizards versus Ninjas was an ambitious VR RPG that leveraged the power of unreal engine and blueprints. </p>
-									<p class="description">The game executed a concept for a kinaesthetic input system where the various positions and orientations of the fingers and hands are used to control the inputs.</p>
-								  </div>
+									<details class='collapsable' style="background-color: rgba(0,0,0,0.6);">
+										<summary>
+											<h6>Wizards Versus Ninjas</h6>
+											<p>Breaking free from the paradigms of button-based inputs into the next step of VR gameplay where YOU are the controller. Innovative gameplay delivered via intuitive visual and physical hand signs brings a new level of immersion to the VR market...</p>
+										</summary>
+										<div id="" style="overflow:scroll; height: 30rem;">
+										<p class="collapsed-text">Explore a maze populated by the natural enemy of the wizard… Ninjas! Peril awaits around every corner; each sentient ninja ever ready to assemble a hoard. 
+											Stay hidden and progress carefully but always be prepared to draw upon your innate powers. Every wise wizard knows to carefully consider options across the 5 primal elements. A well-timed attack with a lightning blade or a tactical escape behind an earth wall, can be what determines your continued existence.
+											</p>
+										<p class="collapsed-text"> In this action stealth spell-slinger, it’s you, your wits and the hand signs you make that’ll decide if you escape. </p>
+										<p class="collapsed-text">A team of highly skilled individuals bringing multiple talents enabled us to tackle this ambitious game. Key building blocks such as: the VR Player controller, AI Behaviour and VFX were brough together where sprints and scrums guided our practise with individuals working in parallel and combining technical elements into key releases.</p>
+										<p class="collapsed-text">Key Technical Innovations include:</p>
+										<p class="collapsed-text">•	The hand sign system consists of a detection and a recognition component delivering the play an immersive physical game play experience.
+											o	The detection component records the relative physical orientation of the hands as well as which fingers on the player holds onto the controller. Correct combinations of both are recognised as the proper hand signs and visual cues in the form off effects are displayed to indicate the players success.
+											o	A distance reactive finger mechanic applied to the grabbing animation grants the player the ability to dynamically grab objects by wrapping individual fingers around object topology, most prominently executed in ‘Half Life Alyx’. Executed via the use of a spline controller on the hands. </p>
+										<p class="collapsed-text">•	By chaining hand signs in a correct order, the recognition component triggers visual cues, enable the player to cast spells. </p>
+										<p class="collapsed-text">•	A platform agnostic approach to controls allows players to use any headset and controller combination without sacrificing the additional features newer tech grants (in this case the valve index controllers the game was specifically designed for).</p>
+										<p class="collapsed-text"> •	The AI competent, utilises the powerful behaviour tree system provided by unreal engine.  This grants NPCs intelligent reactive behaviour. 
+											o	NPCs have sight and hearing able to hone in on the broad location and investigate disturbances. 
+											o	Upon encountering the player, enemy AI can call for backup from anyone in range before pressing an assault
+											o	Access to a ranged and a close-range option allows NPCs to make dynamic decisions based on the combat needs of the situation
+											</p>
+										<p class="collapsed-text">•	Unreal Engine’s new Niagara particle system provides engaging visuals to complement the games spells </p>
+										<p class="collapsed-text">As a long time player of VR I had been frustrated by the fragmented VR market, gameplay and overall experience. Games were few and far between, varied in quality and were seemingly struggling to tailor games to the VR platform. From this I felt that there was an opportunity to reduce barriers to immersive gameplay by removing the traditional control mechanisms and leverage physical player actions to play the game. </p>
+										<p class="collapsed-text">Innovative and unique concepts have been brought together into a demo. As a ‘toy’ gameplay offers a coherent and fresh experience for VR. All core technical elements of the original design were executed and evolved into an illustrative case study in how to increase immersive and reduce the barrier between interface and experience. </p>
+										</div>
+									</details> 
 								</li>
 								<li class='item' style="background-image: url('img/wizardonaskateboardgradientbackground.png')">
-								  <div class='content tm-bg-transparent-black tm-contact-box-pad'>
-									<div style="display: flex; justify-content: center; align-items: center; text-align: center;">
-										<button onclick="window.open('https://github.com/ZelbGames','_blank')" class="contacts-button"><i class="fab fa-github"></i></button>
-										<!--The below line contains temporary code-->
-										<button onclick="window.open('https://itch.io','_blank')" class="contacts-button"><i class="fab fa-itch-io"></i></button>
-									</div>
-									<h2 class='title'>Wizard On A Skateboard</h2>
-									<p class='description'>
-										Wizard On A Skateboard Is a classic 2D level based platformer. Gameplay is quick and focused with sharp controls to compliment the experience.
-									</p>
-									<p class='description'>
-										The project was part of a range of smaller games I made to improve my overall development skills. I used each development cycle to apply conceptual knowledge I obtained from books on game design and experience learning C++ programming. 
-									</p>
-									</div>
+									<details class='collapsable' style="background-color: rgba(0,0,0,0.6);">
+										<summary>
+											<h6>Wizards Versus Ninjas</h6>
+											<p>Taking the best of skateboarding games and applying them to the classic 2D platformer formula to offer a coffee-break-length moment of magic. Build score using a range of tricks and techniques with the responsive and tight controller scheme. Structured around fast-paced engaging levels with the opportunity to record and compare your times. Improve your skills to reach the best score possible and discover the story as you play...</p>
+										</summary>
+										<div id="" style="overflow:scroll; height: 30rem;">
+											<p class="collapsed-text"> Down narrow streets and along castle battlement, the wizard skates towards new horizons indifferent to the fate of the city he used to serve. His former employer the king decided to cut costs and the first to go was that lazy wizard who seemingly hadn’t cast an important spell in over 50 years. Unphased our mage retrieves his orb of protection and takes up his skateboard. With surreal and absurd humour this short experience offers the chance to ditch the broom, abstain from the dimensional door and take up the board to demonstrate your skill. </p>
+											<p class="collapsable-text">Features Include:
+												•	A suite of the essential QOL features expected from high quality platformers including; Coyote Time, 2D sprite passthrough with collisions, static and moving hazards and interactive scenery elements, such as tables and boxes that the wizard can perform tricks on.
+												•	A dynamic scoring system exists. Tricks, and eliminations add to the score. Airtime brings a time dependence to the score added. Multipliers reward high speed, periods of not crashing, as well as the chaining of tricks. Final score is dependent on time taken to complete the level. A trick fatigue system prevents the player from racking up score by staying in one place.
+												•	The game has custom movement mechanics where the player character increases their speed quickly through incremental steps. This encourages fast-paced, risk-taking gameplay that rewards player reactivity.
+												•	The entire game has essential features such as a menu with settings, in game UI elements and background music.
+												</p>
+											<p class="collapsable-text">The first of a set of a collection of short games produced in sprints. To apply knowledge, improve skills. The idea was conceived from a surreal joke about a wizard being under-valued because he does his job, protecting the city.  Just because you can’t see something doesn’t mean it’s not working!   I wanted to make something to blend together the best elements of classic score-based skating games with a progression for 2D platformers</p>
+											<p class="collapsable-text">A technically complete project. Next step is to build more levels to implement existing mechanics and assets.  </p>
+										</div>
+									</details> 
 								</li>
 								<li class='item' style="background-image: url('img/vlcsnap-2024-10-30-14h07m00s560.jpg')">
-									<div class='content tm-bg-transparent-black tm-contact-box-pad'>
-									  <div style="display: flex; justify-content: center; align-items: center; text-align: center;">
-										  <button onclick="window.open('https://www.guildofstudents.com/organisation/uobhideandseek/','_blank')" class="contacts-button"><i class="fas fa-circle-info"></i></button>
-										  <button onclick="window.open('https://www.facebook.com/groups/618961432861887/','_blank')" class="contacts-button"><i class="fab fa-square-facebook"></i></button>
-										  <button onclick="window.open('https://instagram.com/hideandseekuob','_blank')" class="contacts-button"><i class="fab fa-square-instagram"></i></button>
-									  </div>
-									  <h2 class='title'><i>BONUS:</i> Hide and Seek Society</h2>
-									  <p class='description'>  I was fortunate enough to inherit the UOB Hide and Seek society during my final year.</p>
-									  <p class='description'>  During the first semester me and a carefully selected group of friends built and founded what was a name and an approval into a society proper. </p>
-									  <p class='description'>  Resulting from these efforts UOB H&S Society currently puts in small to large scale games of hide and seek for between 5~50 players, bringing together a cross campus community. </p>
-									</div>
+									<details class='collapsable' style="background-color: rgba(0,0,0,0.6);">
+										<summary>
+											<h6>BONUS: Hide and Seek</h6>
+											<p>I was fortunate enough to inherit the UOB Hide and Seek society during my final year.</p>
+										</summary>
+										<p class="collapsed-text"> During the first semester me and a carefully selected group of friends built and founded what was a name and an approval into a society proper.</p>
+										<p class="collapsed-text">Resulting from these efforts UOB H&S Society currently puts in small to large scale games of hide and seek for between 5~50 players, bringing together a cross campus community.</p>
+									</details> 
 								  </li>
 							  </ul>
 							  <nav class='nav'>
-								<a class="prev"><i class="fas fa-arrow-up tm-nav-fa-icon" style="pointer-events: none;"></i></a>
-								<a class="next"><i class="fas fa-arrow-down tm-nav-fa-icon" style="pointer-events: none;"> </i> </a>
+								<a class="next"><i class="fas fa-arrow-left tm-nav-fa-icon" style="pointer-events: none;"></i></a>
+								<a class="prev"><i class="fas fa-arrow-right tm-nav-fa-icon" style="pointer-events: none;"> </i> </a>
 							  </nav>
 					</section>
 
