@@ -13,7 +13,7 @@ body {
     color: white;
     /*IMPORTANT LINE, overflow hidden expands dynamically sized boxes causing irregularity's 
     in sizing across site*/
-	overflow-x: scroll;
+	overflow-x: hidden; /*NOTE: UNSURE IF THIS WAS A GOOD IDEA, WAS SET TO SCROLL BEFORE */
     min-height: 100vh;
     height: 100%;
     position: relative;
@@ -203,7 +203,7 @@ p:last-child { margin-bottom: 0; }
     border-radius: 10px; /* Makes the image circular */
     shape-outside: circle();
     -webkit-shape-outside: circle();
-    margin: 0% 0 -10% -5%;
+    margin: 0% 0% -15% 0%;
 }
 
 .collapsable {
@@ -244,6 +244,25 @@ p:last-child { margin-bottom: 0; }
   }
 */
 
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #ffffff;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
 
 /*End of my additional code*/
 .tm-content {
