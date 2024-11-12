@@ -215,6 +215,24 @@ p:last-child { margin-bottom: 0; }
     font-size: 16px;
 }
 
+.collapsable summary {
+    list-style: none;
+    cursor: pointer;
+}
+
+
+.collapsable summary::after {
+    content: "▼"; /* Unicode character for arrow */
+    color: white;
+    font-size: 1.2em;
+    transition: transform 0.1s ease; /* Smooth rotation for toggle effect */
+    display: flex;
+}
+
+.collapsable[open] summary::after {
+    transform: scaleY(-1);
+}
+
 .collapsed-text {
     font-size: 14px;
     text-wrap: wrap;
@@ -264,6 +282,7 @@ p:last-child { margin-bottom: 0; }
   ::-webkit-scrollbar-thumb:hover {
     background: #555;
   }
+
 
 /*End of my additional code*/
 .tm-content {
